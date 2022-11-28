@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>  
+<head>
+    <link rel="stylesheet" href="intermediate.css">
+    <link rel="stylesheet" type="text/css" href="../contact/chatbot.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Registration</title>
+</head>
+<body>
+  <nav id="main-menu">
+    <ul class="nav-bar">
+      <li  class="nav-button-img"><img src="logo.jpeg" alt="" width="38px" height="35px"></li>
+        <li class="nav-button-home"><a href="homepage.html">Home</a></li>
+        <li class="nav-button-Services"><a href="../services/book-form.html" id="Services">Book Raddiwala</a></li>
+        <li class="nav-button-RateCard"><a href="../rate card/index.html">Rate Card</a></li>
+        <li class="nav-button-Products"><a href="../products/index.html">Products</a></li>
+        <li class="nav-button-Contactus"><a href="../contact/contact.html">Contact Us</a></li>
+         <li class="nav-button-Login" id="login"  ><a href="signin.html" id="log" onclick="">Login</a></li> 
+    </ul>
+</nav>
+
+<div id = "main" class="main">
+    <div class="container-fluid container2">
+      <div class="inner-container-t">
+
+          <div class="box text-center">
+              <p class="card-bigtext">Raddiwala</p>
+              <p class="card-text">The Environment is where we all meet, where we all have a mutual interest, it is the one thing all of us Share.<br> Come, join us in this Revolutionary change.</p>
+              <a class="btngetstarted btn btn-success" href="signup.html" role="button">Register</a>
+
+          </div>
+
+          <div class="box text-center box2">
+              <p class="card-bigtext">Customer</p>
+              <p class="card-text">The Environment is where we all meet, where we all have a mutual interest, it is the one thing all of us Share.<br> Come, support us in this Revolutionary change.</p>
+              <a class="btngetstarted btn btn-success" href="signup2.html" role="button">Register</a>
+
+          </div>
+      </div>
+
+    </div>
+</div>
+</div>  
+
+<div class="chat-bubble">
+</div>
+<div class="chat-box hide">
+    <div class="inner-container" style="height: 90%; width: 100%; overflow-x: hidden; overflow-y:scroll; box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.4);">
+        <div id="container">     
+            <!-- <div class="chat-container">
+                <p class="voice2text" style="text-align: center;">Frequently Asked Questions</p>
+            </div>      -->
+            <div class="chat-container darker">
+                <p class="voice2text">Say 1: What all do you collect?<br>
+                Say 2: Do you operate in my city?<br>
+                Say 3: My item is not listed in your list! Will you buy it?<br>
+                Say 4: How will I know if the vendor is at my doorstep?<br>
+                Say 5: Is there a booking fee?<br>
+                Say 6: Can I cancel a booking? If yes, is there any cancellation fee?<br>
+                Say 7: Can we donate our recyclables today itself? It's urgent.<br>
+                Say 8: What days are you available?<br>
+                Say 9: Is there any minimum quantity for raddi pickup?<br>
+                Say 10: I have suggestions/feedback for Raddiwala.com? How do I convey the same to you?
+                </p>
+            </div>
+        </div>
+    </div>                 
+    <div class="voiceactivate">
+        <button class="chat-btn voice"><img src="../contact/mic.jpg"></button>
+    </div>
+</div>
+
+<div class="footer-bottom-area">
+  <div class="container m-0 pt-3">
+      <div class="row">
+          <div class="col-md-8">
+              <div class="copyright">
+                  <p>&copy; Copyright. Raddiwala.com. All Rights Reserved. <a target="_blank"></a></p>
+              </div>
+          </div>
+      </div>
+  </div>
+</div> 
+
+   <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-auth.js"></script>
+   <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      // apiKey: "AIzaSyDsVlqdXZGsmzxF6lRWkhpdd1H9t3627fg",
+      apiKey: "AIzaSyCILXZxgYqF_MV2x45dMbfhG17fPr8y9x0",
+      // authDomain: "weblogin-2cba0.firebaseapp.com",
+      authDomain: "raddiwala-e37c6.firebaseapp.com",
+      // databaseURL: "https://weblogin-2cba0.firebaseio.com",
+      databaseURL: "https://raddiwala-e37c6-default-rtdb.firebaseio.com/",
+      // projectId: "weblogin-2cba0",
+      projectId: "raddiwala-e37c6",
+      // storageBucket: "weblogin-2cba0.appspot.com",
+      storageBucket: "raddiwala-e37c6.appspot.com",
+      messagingSenderId: "379098716034",
+      appId: "1:379098716034:web:6c86068a6e934bc1a3619b"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
+   <script src="homepage.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+   <script src="../contact/chatbot.js"></script>
+</body>
+</html>
