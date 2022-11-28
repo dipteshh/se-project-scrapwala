@@ -13,11 +13,7 @@ firebase.analytics();
 
 var bookRef = firebase.database().ref("bookings");
 
-// document.getElementById("bookRaddiwala").addEventListener("submit", bookForm);
-
-//Submit Form
 function bookForm() {
-  // Get values
   var date = getInputVal("bdate");
   var time = getInputVal("btime");
   var name = getInputVal("first_name") + " " + getInputVal("last_name");
@@ -30,20 +26,7 @@ function bookForm() {
   saveData(date, time, name, address, city, pin, email, phone);
 
   alert("Booking Successful");
-
-  // show alert
-  /*
-    document.getElementById('alert').style.display = 'block';
-
-    // Hide after 3 sec
-    setTimeout(function(){
-        document.querySelector('.alert').style.display = 'none';
-    }, 2000); 
-
-    document.getElementById('bookRaddiwala').reset();*/
 }
-
-// Function to get Form values
 
 function cancelForm() {
   alert("Booking Canceled");
@@ -52,8 +35,6 @@ function cancelForm() {
 function getInputVal(id) {
   return document.getElementById(id).value;
 }
-
-// Save messages
 
 function saveData(date, time, name, address, city, pin, email, phone) {
   var newbookingRef = bookRef.push();
