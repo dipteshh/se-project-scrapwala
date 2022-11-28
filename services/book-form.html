@@ -1,98 +1,94 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <title>Book Raddiwala</title>
-  <meta name="viewport" content="initial-scale=1">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-  <link rel="stylesheet" href="book-form.css">
-  <link rel="stylesheet" type="text/css" href="../contact/chatbot.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <meta charset="UTF-8" />
+    <title>Book Scrapwala</title>
+    <meta name="viewport" content="initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="book-form.css">
+    <link rel="stylesheet" type="text/css" href="../contact/chatbot.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
 </head>
 
 <body>
-  <nav id="main-menu">
-    <ul class="nav-bar">
-      <li class="nav-button-img" style="margin-top: 3px;"><img src="logo.jpeg" alt="" width="38px" height="35px"></li>
-      <li class="nav-button-home"><a href="../login/homepage.html">Home</a></li>
-      <li class="nav-button-Services"><a href="book-form.html" id="services">Book Raddiwala</a></li>
-      <li class="nav-button-RateCard"><a href="../rate card/index.html">Rate Card</a></li>
-      <li class="nav-button-Products"><a href="../products/index.html">Products</a></li>
-      <li class="nav-button-Aboutus"><a href="..\about us\about.html">About Us</a></li>
-      <li class="nav-button-Contactus"><a href="../contact/contact.html">Contact Us</a></li>
-      <li class="nav-button-Login" id="login"><a href="..\login\signin.html" id="log" onclick="">Login</a></li>
+    <nav id="main-menu">
+        <ul class="nav-bar">
+            <li class="nav-button-img" style="margin-top: 3px;"><img src="logo.jpeg" alt="" width="38px" height="35px"></li>
+            <li class="nav-button-home"><a href="../login/homepage.html">Home</a></li>
+            <li class="nav-button-Services"><a href="book-form.html" id="services">Book Scrapwala</a></li>
+            <li class="nav-button-RateCard"><a href="../rate card/index.html">Rate Card</a></li>
+            <li class="nav-button-Products"><a href="../products/index.html">Products</a></li>
+            <li class="nav-button-Aboutus"><a href="..\about us\about.html">About Us</a></li>
+            <li class="nav-button-Contactus"><a href="../contact/contact.html">Contact Us</a></li>
+            <li class="nav-button-Login" id="login"><a href="..\login\signin.html" id="log" onclick="">Login</a></li>
 
-    </ul>
-  </nav>
+        </ul>
+    </nav>
 
-  <h1>Book Raddiwala</h1>
-  <div class="container">
-    <div class="col s12 m10 offset-m1 l6 offset-l3">
+    <h1>Book Scrapwala</h1>
+    <div class="container">
+        <div class="col s12 m10 offset-m1 l6 offset-l3">
 
-      <div class="row">
+            <div class="row">
 
-        <div id="alert">Booking Successfull</div>
-        <form class="col s12 m8 offset-m2 l6 offset-l3" id="bookRaddiwala-data-time">
-          <div class="row">
-            <div class="input-field">
-              <input type=text name="bdate" id="bdate" class="datepicker" required>
-              <label for="bdate" style="color: rgb(245, 245, 245);">Date of Scrap Pickup</label>
+                <div id="alert">Booking Successfull</div>
+                <form class="col s12 m8 offset-m2 l6 offset-l3" id="bookRaddiwala-data-time">
+                    <div class="row">
+                        <div class="input-field">
+                            <input type=text name="bdate" id="bdate" class="datepicker" required>
+                            <label for="bdate" style="color: rgb(245, 245, 245);">Date of Scrap Pickup</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div>
+                            <div class="input-field">
+                                <input type=text name="btime" id="btime" class="timepicker" required>
+                                <label for="btime" style="color: rgb(245, 245, 245);">Choose Time</label>
+                            </div>
+                        </div>
+                    </div>
+
             </div>
-          </div>
-          <div class="row">
-            <div>
-              <div class="input-field">
-                <input type=text name="btime" id="btime" class="timepicker" required>
-                <label for="btime" style="color: rgb(245, 245, 245);">Choose Time</label>
-              </div>
-            </div>
-          </div>
 
-      </div>
-
-    </div>
-    <div class="row">
-      <form class="col s12" id="bookRaddiwala" method="POST">
+        </div>
         <div class="row">
-          <div class="col s12">
-            <label for="country" style="color: rgb(245, 245, 245);">Country</label>
-            <select id="country" class="browser-default" required title="Please select a country">
+            <form class="col s12" id="bookRaddiwala" method="POST">
+                <div class="row">
+                    <div class="col s12">
+                        <label for="country" style="color: rgb(245, 245, 245);">Country</label>
+                        <select id="country" class="browser-default" required title="Please select a country">
               <option value="" disabled selected>Select a country</option>
               <option value="ind">India</option>
             </select>
-          </div>
-        </div>
-        <div class="row">
-          <div class="input-field col s12 m12 l6">
-            <input id="first_name" type="text" required class="validate" pattern="^\S.{1,23}\S$"
-              title="Please enter a first Name between 3-25 characters" length="25">
-            <label for="first_name" style="color: rgb(245, 245, 245);">First Name</label>
-          </div>
-          <div class="input-field col s12 m12 l6">
-            <input id="last_name" type="text" required class="validate" pattern="^\S.{1,23}\S$"
-              title="Please enter a last Name between 3-25 characters" length="25">
-            <label for="last_name" style="color: rgb(245, 245, 245);">Last Name</label>
-          </div>
-        </div>
-        <div class="row">
-          <div class="input-field col s12 m12 l6">
-            <input id="address" type="text" required class="validate" pattern="^\S.+"
-              title="Please enter a valid address">
-            <label for="address" style="color: rgb(245, 245, 245);">Address</label>
-          </div>
-          <div class="input-field col s12 m12 l6">
-            <input id="town" type="text" required class="validate" title="Please enter a valid City/Town"
-              pattern="^\S.+">
-            <label for="town" style="color: rgb(245, 245, 245);">City/Town</label>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col s12 m12 l6">
-            <label for="state" style="color: rgb(245, 245, 245);">State</label>
-            <select id="state" class="browser-default" required title="Please select a state">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12 m12 l6">
+                        <input id="first_name" type="text" required class="validate" pattern="^\S.{1,23}\S$" title="Please enter a first Name between 3-25 characters" length="25">
+                        <label for="first_name" style="color: rgb(245, 245, 245);">First Name</label>
+                    </div>
+                    <div class="input-field col s12 m12 l6">
+                        <input id="last_name" type="text" required class="validate" pattern="^\S.{1,23}\S$" title="Please enter a last Name between 3-25 characters" length="25">
+                        <label for="last_name" style="color: rgb(245, 245, 245);">Last Name</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12 m12 l6">
+                        <input id="address" type="text" required class="validate" pattern="^\S.+" title="Please enter a valid address">
+                        <label for="address" style="color: rgb(245, 245, 245);">Address</label>
+                    </div>
+                    <div class="input-field col s12 m12 l6">
+                        <input id="town" type="text" required class="validate" title="Please enter a valid City/Town" pattern="^\S.+">
+                        <label for="town" style="color: rgb(245, 245, 245);">City/Town</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12 m12 l6">
+                        <label for="state" style="color: rgb(245, 245, 245);">State</label>
+                        <select id="state" class="browser-default" required title="Please select a state">
               <option value="" disabled selected>Select a state</option>
               <option value="delhi">Delhi</option>
               <option value="mumbai">Maharastra</option>
@@ -103,91 +99,79 @@
               <option value="ahmedabad">Gujarat</option>
               <option value="kanpur">Uttar Pradesh</option>
             </select>
-          </div>
-          <div class="input-field col s12 m12 l6">
-            <input id="pin-code" type="text" required title="Please enter a valid Indian pin code"
-              pattern="^[1-9][0-9]{5}$" class="validate">
-            <label for="pin-code" style="color: rgb(245, 245, 245);">Zip Code</label>
-          </div>
+                    </div>
+                    <div class="input-field col s12 m12 l6">
+                        <input id="pin-code" type="text" required title="Please enter a valid Indian pin code" pattern="^[1-9][0-9]{5}$" class="validate">
+                        <label for="pin-code" style="color: rgb(245, 245, 245);">Zip Code</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12 m12 l6">
+                        <i class="material-icons prefix">email</i>
+                        <input id="email" type="email" required class="validate" title="Please enter a valid email">
+                        <label for="email" style="color: rgb(245, 245, 245);">Email</label>
+                    </div>
+                    <div class="input-field col s12 m12 l6">
+                        <i class="material-icons prefix">contact_phone</i>
+                        <input id="phone-number" type="tel" required title="Please enter a valid phone number (e.g., (123) 456-7890)" pattern="^[0-9]?\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$" class="validate">
+                        <label for="phone-number" style="color: rgb(245, 245, 245);">Phone Number</label>
+                    </div>
+                    <!-- <button type="submit" onclick="bookForm()" value="submit" style="background-color: black; color: white; padding: 1.7% 5.5%;" >Book Raddiwala</button> -->
+                    <button class="waves-effect waves-light btn right" onclick="bookForm()" type="submit" value="submit" id="book-button" style="color: rgb(245, 245, 245);">Book Scrapwala</button>
+
+                    <button class="waves-effect waves-light btn right" onclick="cancelForm()" type="submit" id="cancel-button" style="color: rgb(245, 245, 245);">Cancel Booking</button>
+                    <!-- php CI model code, convert string to date -->
+                    <!-- 'bdate' => date("Y-m-d", strtotime($this->input->post('bdate'))) -->
+
+            </form>
+            </div>
         </div>
-        <div class="row">
-          <div class="input-field col s12 m12 l6">
-            <i class="material-icons prefix">email</i>
-            <input id="email" type="email" required class="validate" title="Please enter a valid email">
-            <label for="email" style="color: rgb(245, 245, 245);">Email</label>
-          </div>
-          <div class="input-field col s12 m12 l6">
-            <i class="material-icons prefix">contact_phone</i>
-            <input id="phone-number" type="tel" required
-              title="Please enter a valid phone number (e.g., (123) 456-7890)"
-              pattern="^[0-9]?\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$" class="validate">
-            <label for="phone-number" style="color: rgb(245, 245, 245);">Phone Number</label>
-          </div>
-          <!-- <button type="submit" onclick="bookForm()" value="submit" style="background-color: black; color: white; padding: 1.7% 5.5%;" >Book Raddiwala</button> -->
-          <button class="waves-effect waves-light btn right" onclick="bookForm()" type="submit" value="submit"
-            id="book-button" style="color: rgb(245, 245, 245);">Book Raddiwala</button>
-
-          <button class="waves-effect waves-light btn right" onclick="cancelForm()" type="submit" id="cancel-button"
-            style="color: rgb(245, 245, 245);">Cancel Booking</button>
-          <!-- php CI model code, convert string to date -->
-          <!-- 'bdate' => date("Y-m-d", strtotime($this->input->post('bdate'))) -->
-
-      </form>
     </div>
-  </div>
-  </div>
 
-  <div class="chat-bubble">
-  </div>
-  <div class="chat-box hide">
-    <div class="inner-container"
-      style="height: 90%; width: 100%; overflow-x: hidden; overflow-y:scroll; box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.4);">
-      <div id="container">
-        <!-- <div class="chat-container">
+    <div class="chat-bubble">
+    </div>
+    <div class="chat-box hide">
+        <div class="inner-container" style="height: 90%; width: 100%; overflow-x: hidden; overflow-y:scroll; box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.4);">
+            <div id="container">
+                <!-- <div class="chat-container">
                 <p class="voice2text" style="text-align: center;">Frequently Asked Questions</p>
             </div>      -->
-        <div class="chat-container darker">
-          <p class="voice2text">Say 1: What all do you collect?<br>
-            Say 2: Do you operate in my city?<br>
-            Say 3: My item is not listed in your list! Will you buy it?<br>
-            Say 4: How will I know if the vendor is at my doorstep?<br>
-            Say 5: Is there a booking fee?<br>
-            Say 6: Can I cancel a booking? If yes, is there any cancellation fee?<br>
-            Say 7: Can we donate our recyclables today itself? It's urgent.<br>
-            Say 8: What days are you available?<br>
-            Say 9: Is there any minimum quantity for raddi pickup?<br>
-            Say 10: I have suggestions/feedback for Raddiwala.com? How do I convey the same to you?
-          </p>
+                <div class="chat-container darker">
+                    <p class="voice2text">Say 1: What all do you collect?<br> Say 2: Do you operate in my city?<br> Say 3: My item is not listed in your list! Will you buy it?<br> Say 4: How will I know if the vendor is at my doorstep?<br> Say 5: Is there a booking fee?<br>                        Say 6: Can I cancel a booking? If yes, is there any cancellation fee?<br> Say 7: Can we donate our recyclables today itself? It's urgent.<br> Say 8: What days are you available?<br> Say 9: Is there any minimum quantity for raddi
+                        pickup?<br> Say 10: I have suggestions/feedback for Scrapwala.com? How do I convey the same to you?
+                    </p>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-    <div class="voiceactivate">
-      <button class="chat-btn voice" style="margin:0px;"><img src="../contact/mic.jpg"></button>
-    </div>
-  </div>
-
-  <div class="footer-bottom-area">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-8">
-          <div class="copyright">
-            <p>&copy; Copyright. Raddiwala.com. All Rights Reserved. <a target="_blank"></a></p>
-          </div>
+        <div class="voiceactivate">
+            <button class="chat-btn voice" style="margin:0px;"><img src="../contact/mic.jpg"></button>
         </div>
-      </div>
     </div>
-  </div>
-  <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-auth.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-database.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-analytics.js"></script>
 
-  <script src="booking.js"></script>
-  <script src="book-form.js"></script>
-  <script src="../login/homepage.js"></script>
+    <div class="footer-bottom-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="copyright">
+                        <p>&copy; Copyright. Scrapwala.com. All Rights Reserved.
+                            <a target="_blank"></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-analytics.js"></script>
 
-  <script src="../contact/chatbot.js"></script>
+    <script src="booking.js"></script>
+    <script src="book-form.js"></script>
+    <script src="../login/homepage.js"></script>
+
+    <script src="../contact/chatbot.js"></script>
 </body>
 
 </html>
