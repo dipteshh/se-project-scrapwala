@@ -1,18 +1,15 @@
-// Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 var firebaseConfig = {
   apiKey: "AIzaSyB-k3rnXAwzn7PDxTrpo29CMP-WFZQOgxM",
   authDomain: "se-project-database.firebaseapp.com",
+  databaseURL:
+    "https://se-project-database-default-rtdb.asia-southeast1.firebasedatabase.app",
   projectId: "se-project-database",
   storageBucket: "se-project-database.appspot.com",
   messagingSenderId: "416994024086",
   appId: "1:416994024086:web:2093ec25b2d6679ab740b7",
 };
-// Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 firebase.analytics();
-
-// Listen for form submit
 
 var bookRef = firebase.database().ref("bookings");
 
